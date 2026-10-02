@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>سبا مساج في الرياض | مساج واسترخاء</title>
+
+    <meta name="description"
+          content="سبا مساج في الرياض للرجال والنساء. جلسات مساج واسترخاء في أجواء هادئة ومريحة. اتصل الآن للحجز والاستفسار.">
+
+    <meta name="keywords"
+          content="سبا مساج الرياض, مساج الرياض, سبا الرياض, مساج رجال ونساء, مساج واسترخاء">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Tahoma,
+                Arial,
+                sans-serif;
+
+            background: #f7f4ef;
+            color: #222;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 30px 20px;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.68),
+                    rgba(0,0,0,0.72)
+                ),
+                linear-gradient(
+                    135deg,
+                    #5d5144,
+                    #161616
+                );
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .badge {
+            display: inline-block;
+
+            border: 1px solid rgba(255,255,255,0.45);
+
+            padding: 7px 20px;
+
+            border-radius: 50px;
+
+            margin-bottom: 25px;
+
+            font-size: 15px;
+
+            color: #eee;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 8vw, 80px);
+
+            margin-bottom: 10px;
+
+            letter-spacing: 1px;
+        }
+
+        .hero h2 {
+            font-size: clamp(22px, 4vw, 34px);
+
+            font-weight: normal;
+
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: clamp(17px, 3vw, 23px);
+
+            color: #ddd;
+
+            margin-bottom: 35px;
+        }
+
+        /* =========================
+           BUTTONS
+        ========================== */
+
+        .buttons {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 14px;
+
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 14px 30px;
+
+            border-radius: 8px;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+            transition: 0.25s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .call-btn {
+            background: white;
+
+            color: #111;
+        }
+
+        .whatsapp-btn {
+            background: #20a85a;
+
+            color: white;
+        }
+
+        /* =========================
+           SECTIONS
+        ========================== */
+
+        section {
+            padding: 75px 20px;
+
+            max-width: 1100px;
+
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+
+            font-size: 34px;
+
+            margin-bottom: 18px;
+
+            color: #29231d;
+        }
+
+        .section-subtitle {
+            text-align: center;
+
+            max-width: 750px;
+
+            margin: 0 auto 40px;
+
+            color: #666;
+
+            font-size: 18px;
+        }
+
+        /* =========================
+           SERVICES
+        ========================== */
+
+        .services {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 14px;
+
+            box-shadow:
+                0 5px 25px
+                rgba(0,0,0,0.07);
+
+            text-align: center;
+        }
+
+        .service-icon {
+            font-size: 38px;
+
+            margin-bottom: 12px;
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+
+            margin-bottom: 8px;
+        }
+
+        .service-card p {
+            color: #666;
+
+            font-size: 16px;
+        }
+
+        /* =========================
+           WHY US
+        ========================== */
+
+        .features {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+
+            margin-top: 35px;
+        }
+
+        .feature {
+            background: #fff;
+
+            padding: 25px;
+
+            border-radius: 12px;
+
+            text-align: center;
+        }
+
+        .feature h3 {
+            margin-bottom: 7px;
+        }
+
+        .feature p {
+            color: #666;
+
+            font-size: 15px;
+        }
+
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact-section {
+            max-width: none;
+
+            background: #1c1c1c;
+
+            color: white;
+
+            text-align: center;
+        }
+
+        .contact-section .section-title {
+            color: white;
+        }
+
+        .contact-section p {
+            color: #ccc;
+
+            font-size: 18px;
+        }
+
+        .phone-number {
+            display: block;
+
+            margin: 20px 0 30px;
+
+            font-size: 34px;
+
+            font-weight: bold;
+
+            color: white;
+
+            direction: ltr;
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #111;
+
+            color: #999;
+
+            text-align: center;
+
+            padding: 25px 15px;
+
+            font-size: 14px;
+        }
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 700px) {
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 55px 18px;
+            }
+
+            .hero {
+                min-height: 90vh;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .phone-number {
+                font-size: 27px;
+            }
+
+            .btn {
+                width: 100%;
+
+                max-width: 320px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HERO
+========================== -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            الرياض • للرجال والنساء
+        </div>
+
+        <h1>
+            سبا مساج
+        </h1>
+
+        <h2>
+            راحتك تبدأ من هنا
+        </h2>
+
+        <p>
+            جلسات مساج واسترخاء في أجواء هادئة ومريحة
+        </p>
+
+
+        <div class="buttons">
+
+            <a
+                class="btn call-btn"
+                href="tel:+966579084704"
+            >
+                📞 اتصل الآن
+            </a>
+
+
+            <a
+                class="btn whatsapp-btn"
+                href="https://wa.me/966579084704?text=مرحباً، أريد الاستفسار عن جلسات المساج والسبا."
+                target="_blank"
+                rel="noopener"
+            >
+                💬 واتساب
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     SERVICES
+========================== -->
+
+<section>
+
+    <h2 class="section-title">
+        خدماتنا
+    </h2>
+
+    <p class="section-subtitle">
+        نقدم جلسات مساج واسترخاء للرجال والنساء
+        في الرياض، مع الاهتمام بالراحة والخصوصية
+        وتوفير أجواء هادئة ومريحة.
+    </p>
+
+
+    <div class="services">
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                🧘
+            </div>
+
+            <h3>
+                مساج استرخائي
+            </h3>
+
+            <p>
+                جلسة تساعد على الاسترخاء والراحة
+                بعد يوم متعب.
+            </p>
+
+        </div>
+
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                💆
+            </div>
+
+            <h3>
+                مساج للعضلات
+            </h3>
+
+            <p>
+                جلسات للمساعدة على تخفيف
+                التوتر والإجهاد العضلي.
+            </p>
+
+        </div>
+
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                🌿
+            </div>
+
+            <h3>
+                جلسات سبا
+            </h3>
+
+            <p>
+                أجواء هادئة وتجربة مريحة
+                للعناية والاسترخاء.
+            </p>
+
+        </div>
+
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                ✨
+            </div>
+
+            <h3>
+                للرجال والنساء
+            </h3>
+
+            <p>
+                خدمة مخصصة للرجال والنساء
+                مع الحجز والاستفسار مسبقاً.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FEATURES
+========================== -->
+
+<section>
+
+    <h2 class="section-title">
+        لماذا سبا مساج؟
+    </h2>
+
+    <p class="section-subtitle">
+        هدفنا توفير تجربة مريحة وهادئة
+        للعميل من بداية التواصل وحتى انتهاء الجلسة.
+    </p>
+
+
+    <div class="features">
+
+
+        <div class="feature">
+
+            <h3>
+                🌿 أجواء هادئة
+            </h3>
+
+            <p>
+                بيئة مناسبة للاسترخاء والراحة.
+            </p>
+
+        </div>
+
+
+
+        <div class="feature">
+
+            <h3>
+                🤝 خدمة احترافية
+            </h3>
+
+            <p>
+                اهتمام بالعميل وتجربة مريحة.
+            </p>
+
+        </div>
+
+
+
+        <div class="feature">
+
+            <h3>
+                📍 الرياض
+            </h3>
+
+            <p>
+                خدمة داخل مدينة الرياض.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================== -->
+
+<section class="contact-section">
+
+    <div>
+
+        <h2 class="section-title">
+            احجز جلستك الآن
+        </h2>
+
+        <p>
+            للاستفسار عن الخدمات والمواعيد،
+            تواصل معنا مباشرة.
+        </p>
+
+
+        <a
+            class="phone-number"
+            href="tel:+966579084704"
+        >
+            0579084704
+        </a>
+
+
+        <div class="buttons">
+
+            <a
+                class="btn call-btn"
+                href="tel:+966579084704"
+            >
+                📞 اتصال
+            </a>
+
+
+            <a
+                class="btn whatsapp-btn"
+                href="https://wa.me/966579084704?text=مرحباً، أريد الاستفسار عن جلسات المساج والسبا."
+                target="_blank"
+                rel="noopener"
+            >
+                💬 واتساب
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+    © 2026 سبا مساج - الرياض
+
+</footer>
+
+
+</body>
+</html>
